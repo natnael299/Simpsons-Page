@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./general.css" />
+    <style>
+      #hero {
+        height: 300px;
+        width: 300px;
+        background: url("assets/banner.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img class="logo" src="./assets/logo.svg" alt="the simpson logo" />
+        <!--- Desktop Menu -->
+        <nav class="navBarDesktop"></nav>
+
+        <!-- Opens Mobile Menu-->
+        <button class="mobileMenuOpener" popovertarget="mobileMenu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!--- Mobile Menu -->
+        <div popover="" id="mobileMenu">
+          <!-- Closes Mobile Menu-->
+          <button
+            popovertarget="mobileMenu"
+            popovertargetaction="hide"
+            class="closeButton"
+          >
+            <i class="fa-solid fa-x"></i>
+          </button>
+        </div>
+      </header>
+
+      <section id="hero"></section>
+    </div>
+    <script src="./general.js"></script>
+  </body>
+</html>

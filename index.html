@@ -12,16 +12,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./general.css" />
-    <style>
-      #hero {
-        height: 300px;
-        width: 300px;
-        background: url("assets/banner.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-    </style>
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <div class="container">
@@ -48,8 +39,55 @@
         </div>
       </header>
 
-      <section id="hero"></section>
+      <section id="hero">
+        <div class="detailsContainer">
+          <div class="headline">
+            <h1>The</h1>
+            <h1>Simpsons</h1>
+          </div>
+          <p>
+            Here you go: For over three decades, The Simpsons has been more than
+            a cartoon, it's a cultural institution. Set in Springfield, follow
+            America's favorite dysfunctional family through sharp satire, iconic
+            catchphrases, and tender stories that shaped pop culture like
+            nothing else.
+          </p>
+          <a class="explore">Explore epsodes</a>
+          <a class="cxcs">Meet The Charachters</a>
+          <div class="details">
+            <div>
+              <p class="stat">36</p>
+              <p class="statDetail">Seasons</p>
+            </div>
+            <div>
+              <p class="stat">36</p>
+              <p class="statDetail">Epsodies</p>
+            </div>
+            <div>
+              <p class="stat">34-years</p>
+              <p class="statDetail">on air</p>
+            </div>
+          </div>
+        </div>
+        <div class="imgContainer">
+          <img
+            class="banner"
+            src="./assets/banner.png"
+            alt="The simpsons banner"
+          />
+        </div>
+      </section>
+
+      <section id="statesSection">
+        <div class="comments">
+          <h1>Movie Reviews</h1>
+        </div>
+        <div class="MovieOverview">
+          <h1>About The Simpsons</h1>
+        </div>
+      </section>
     </div>
     <script src="./general.js"></script>
+    <script src="./states.js"></script>
   </body>
 </html>

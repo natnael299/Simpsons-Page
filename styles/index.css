@@ -34,6 +34,13 @@ body {
   font-size: clamp(0.9rem, 1vw, 2.7rem);
 }
 
+.ctas {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+  gap: 10px;
+}
+
 .explore {
   border: 1px solid black;
   background-color: gold;
@@ -172,4 +179,88 @@ body {
   margin: 10px 0;
   font-weight: bolder;
   gap: 2px;
+}
+
+@media (max-width: 800px) {
+  #hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: clamp(60px, 10vh, 150px);
+  }
+
+  #hero .detailsContainer {
+    width: 100%;
+  }
+
+  .detailsContainer .headline {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .headline h1 {
+    font-weight: bolder;
+    font-size: 2rem;
+  }
+
+  .detailsContainer p {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.3em;
+    font-size: clamp(0.9rem, 1vw, 2.7rem);
+  }
+  .ctas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    gap: 20px;
+  }
+
+  .details {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+    gap: 30px;
+  }
+
+  #statesSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  .MovieOverview {
+    width: 75%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #252525;
+    color: #fff;
+    border-radius: 15px;
+    max-width: 400px;
+    margin: 20px 0;
+  }
+
+  .comments {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+}
+
+@media (max-width: 540px) {
+  #statesSection {
+    margin-top: 1.5rem;
+  }
 }

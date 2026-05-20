@@ -1,0 +1,159 @@
+body {
+  background-color: gold;
+}
+
+#hero {
+  margin-top: 110px;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.heroHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(2rem, 5rem, 6rem);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.description p {
+  max-width: 500px;
+  text-align: center;
+  line-height: 1.4rem;
+}
+
+.description a {
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 10px 12px;
+  text-decoration: none;
+  color: gold;
+  margin-top: 30px;
+  background-color: black;
+  font-weight: bold;
+}
+
+.description a:hover {
+  opacity: 0.7;
+}
+.heroHeader img {
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 670px;
+  height: auto;
+  height: auto;
+}
+#locations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  width: 100%;
+  background-color: #0b0b0b;
+  color: gold;
+}
+
+#locations h1 {
+  color: gold;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  margin: 30px 0;
+  height: 55px;
+  width: 550px;
+  border-radius: 25px;
+  padding: 4px;
+  background-color: #fff;
+}
+
+.inputContainer input {
+  padding: 5px 0 5px 10px;
+  border: none;
+  outline: none;
+  height: inherit;
+  width: inherit;
+  background: transparent;
+  border-radius: inherit;
+}
+.inputContainer button {
+  height: 45px;
+  width: 200px;
+  border-radius: inherit;
+  background-color: black;
+  color: gold;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+.inputContainer button:hover {
+  opacity: 0.8;
+}
+
+#homes {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 400px));
+  gap: 10px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#homes .home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  height: fit-content;
+  padding: 8px 0;
+  background-color: #151515;
+  border-radius: 35px;
+  border-top: 5px solid gold;
+  border-bottom: 5px solid gold;
+  border-top-color: gold;
+  border-bottom-color: gold;
+}
+
+.home .thumbnailC {
+  width: 100%;
+  border-bottom: 1px solid white;
+  padding: 10px 20px;
+}
+
+.home .homeContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+
+.homeContent h3 {
+  margin-bottom: 15px;
+}
+.homeContent .checkBtn {
+  margin-top: 35px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #222222;
+  color: #fff;
+  text-decoration: none;
+}
+.homeContent .checkBtn:hover {
+  opacity: 0.6;
+}
+
+.thumbnailC img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 10px;
+}

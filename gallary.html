@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/general.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img class="logo" src="./assets/logo.svg" alt="the simpson logo" />
+        <!--- Desktop Menu -->
+        <nav class="navBarDesktop"></nav>
+
+        <!-- Opens Mobile Menu-->
+        <button class="mobileMenuOpener" popovertarget="mobileMenu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!--- Mobile Menu -->
+        <div popover="" id="mobileMenu">
+          <!-- Closes Mobile Menu-->
+          <button
+            popovertarget="mobileMenu"
+            popovertargetaction="hide"
+            class="closeButton"
+          >
+            <i class="fa-solid fa-x"></i>
+          </button>
+        </div>
+      </header>
+    </div>
+    <script src="./scripts/general.js"></script>
+    <script type="module" src="./gallary.js"></script>
+  </body>
+</html>

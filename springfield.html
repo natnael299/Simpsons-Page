@@ -39,9 +39,32 @@
         </div>
       </header>
 
-      <section id="hero"></section>
+      <section id="hero">
+        <div class="heroHeader">
+          <div class="description">
+            <h1>Springfield City Overview</h1>
+            <p>
+              Explore iconic locations from Springfield, including the Simpsons'
+              home, Moe's Tavern, and the Kwik-E-Mart. Click any location to
+              open its dedicated page with an image gallery.
+            </p>
+            <a href="#homes">Check the Locations &rightarrow;</a>
+          </div>
+          <img src="./assets/springfield.jpg" />
+        </div>
+      </section>
+
+      <section id="locations">
+        <h1>prevalent Locations from Springfield</h1>
+        <div class="inputContainer">
+          <input type="text" placeholder="filter the houses" class="inputEle" />
+          <button class="inputBtn">search &rightarrow;</button>
+        </div>
+
+        <div id="homes"></div>
+      </section>
     </div>
     <script src="./scripts/general.js"></script>
-    <script src="./springfield/springfield.js"></script>
+    <script type="module" src="./springfield/springfield.js"></script>
   </body>
 </html>

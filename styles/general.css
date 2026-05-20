@@ -1,11 +1,37 @@
+@import url(https://fonts.googleapis.com/css?family=Luckiest+Guy:regular);
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Baloo+2:regular,500,600,700,800);
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
+  font-family: "Nunito";
   transition: all 0.25s ease-in-out;
 }
+
+h1 {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h2,
+h3 {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 700;
+}
+
+button {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -73,6 +99,7 @@ nav a:hover {
     width: 150px;
     border: none;
     border: 1px solid black;
+    background-color: #222222;
     border-radius: 10px;
   }
   #mobileMenu:popover-open {
@@ -83,16 +110,16 @@ nav a:hover {
   }
 
   #mobileMenu:popover-open a {
+    color: #fff;
     text-decoration: none;
     width: 100%;
     padding: 5px 0;
     text-align: center;
-    color: #252525;
     font-weight: bold;
   }
 
   #mobileMenu:popover-open a:hover {
-    background-color: aliceblue;
+    opacity: 0.6;
   }
 
   .closeButton {

@@ -162,3 +162,194 @@ export const locations = [
     ],
   },
 ];
+
+export const cxcs = [
+  {
+    id: "homer-simpson",
+    name: "Homer Simpson",
+    slug: "homer-simpson",
+    movie: "The Simpsons Movie",
+    year: 2007,
+    role: "Main Protagonist",
+    shortDescription:
+      "A flawed but lovable dad whose actions trigger Springfield's crisis.",
+    fullDescription:
+      "Homer causes the environmental disaster that traps Springfield under a dome after dumping pig waste in the lake. He eventually confronts his mistakes and returns to save his family and town.",
+    thumbnail: "./assets/characters/homer.jpg",
+    profileLink: "https://simpsons.fandom.com/wiki/Homer_Simpson",
+  },
+  {
+    id: "marge-simpson",
+    name: "Marge Simpson",
+    slug: "marge-simpson",
+    movie: "The Simpsons Movie",
+    year: 2007,
+    role: "Main Protagonist",
+    shortDescription:
+      "The family backbone who pushes Homer to take responsibility.",
+    fullDescription:
+      "Marge protects the family throughout the chaos and gives Homer clear consequences when he fails them. Her steady judgment keeps the Simpsons together when Springfield turns against them.",
+    thumbnail: "./assets/characters/marge.jpg",
+    profileLink: "https://simpsons.fandom.com/wiki/Marge_Simpson",
+  },
+  {
+    id: "bart-simpson",
+    name: "Bart Simpson",
+    slug: "bart-simpson",
+    movie: "The Simpsons Movie",
+    year: 2007,
+    role: "Main Protagonist",
+    shortDescription:
+      "A rebellious son who struggles with his bond with Homer.",
+    fullDescription:
+      "Bart feels neglected by Homer and briefly seeks guidance from Ned Flanders. Even with family tension, Bart still steps up in the final moments to help save Springfield.",
+    thumbnail: "./assets/characters/bart.jpg",
+    profileLink: "https://simpsons.fandom.com/wiki/Bart_Simpson",
+  },
+  {
+    id: "lisa-simpson",
+    name: "Lisa Simpson",
+    slug: "lisa-simpson",
+    movie: "The Simpsons Movie",
+    year: 2007,
+    role: "Main Protagonist",
+    shortDescription:
+      "The moral voice who warns Springfield before disaster hits.",
+    fullDescription:
+      "Lisa calls for environmental action long before the town is sealed under the dome. Her intelligence and compassion guide many of the story's most responsible choices.",
+    thumbnail: "./assets/characters/lisa.jpg",
+    profileLink: "https://simpsons.fandom.com/wiki/Lisa_Simpson",
+  },
+  {
+    id: "maggie-simpson",
+    name: "Maggie Simpson",
+    slug: "maggie-simpson",
+    movie: "The Simpsons Movie",
+    year: 2007,
+    role: "Supporting Hero",
+    shortDescription: "Quiet but memorable presence during key family moments.",
+    fullDescription:
+      "Maggie has limited dialogue but remains central in emotional family scenes and action beats. Her reactions often underline the stakes without needing words.",
+    thumbnail: "./assets/characters/maggie.jpg",
+    profileLink: "https://simpsons.fandom.com/wiki/Maggie_Simpson",
+  },
+  {
+    id: "abraham-simpson",
+    name: "Abraham Simpson",
+    slug: "abraham-simpson",
+    movie: "The Simpsons Movie",
+    year: 2007,
+    role: "Supporting Character",
+    shortDescription:
+      "Grampa delivers the eerie warning that foreshadows the crisis.",
+    fullDescription:
+      "During church, Grampa enters a trance-like state and gives a cryptic prophecy. His warning seems absurd at first but ends up framing the movie's central danger.",
+    thumbnail: "./assets/characters/grampa.jpg",
+    profileLink: "https://simpsons.fandom.com/wiki/Abraham_Simpson",
+  },
+  {
+    id: "ned-flanders",
+    name: "Ned Flanders",
+    slug: "ned-flanders",
+    movie: "The Simpsons Movie",
+    year: 2007,
+    role: "Supporting Hero",
+    shortDescription: "A kind neighbor who becomes a father figure for Bart.",
+    fullDescription:
+      "Ned gives Bart the care and stability he feels he is missing from Homer. His patience highlights the emotional conflict inside the Simpson family.",
+    thumbnail: "./assets/characters/ned.jpg",
+    profileLink: "https://simpsons.fandom.com/wiki/Ned_Flanders",
+  },
+  {
+    id: "russ-cargill",
+    name: "Russ Cargill",
+    slug: "russ-cargill",
+    movie: "The Simpsons Movie",
+    year: 2007,
+    role: "Main Antagonist",
+    shortDescription: "The EPA head who escalates Springfield's destruction.",
+    fullDescription:
+      "Russ Cargill enforces extreme actions against Springfield and pushes the conflict to its highest stakes. He serves as the movie's central human villain.",
+    thumbnail: "./assets/characters/russ-cargill.jpg",
+    profileLink: "https://simpsons.fandom.com/wiki/Russ_Cargill",
+  },
+  {
+    id: "mr-burns",
+    name: "Mr. Burns",
+    slug: "mr-burns",
+    movie: "The Simpsons Movie",
+    year: 2007,
+    role: "Supporting Character",
+    shortDescription:
+      "Springfield's richest man and symbol of unchecked greed.",
+    fullDescription:
+      "Although not the primary villain in the film, Mr. Burns represents the long-standing corporate selfishness that defines much of Springfield's corruption.",
+    thumbnail: "./assets/characters/mr-burns.jpg",
+    profileLink: "https://simpsons.fandom.com/wiki/Mr._Burns",
+  },
+  {
+    id: "waylon-smithers",
+    name: "Waylon Smithers",
+    slug: "waylon-smithers",
+    movie: "The Simpsons Movie",
+    year: 2007,
+    role: "Supporting Character",
+    shortDescription: "Mr. Burns' loyal assistant present in key town moments.",
+    fullDescription:
+      "Smithers appears alongside Burns and helps maintain continuity with Springfield's power structure. His role is smaller but recognizable in ensemble scenes.",
+    thumbnail: "./assets/characters/smithers.jpg",
+    profileLink: "https://simpsons.fandom.com/wiki/Waylon_Smithers",
+  },
+  {
+    id: "moe-szyslak",
+    name: "Moe Szyslak",
+    slug: "moe-szyslak",
+    movie: "The Simpsons Movie",
+    year: 2007,
+    role: "Supporting Character",
+    shortDescription: "Tavern owner caught up in Springfield's mob panic.",
+    fullDescription:
+      "Moe contributes to the town's aggressive reaction when Homer is blamed for the catastrophe. His scenes help show Springfield's social breakdown.",
+    thumbnail: "./assets/characters/moe.jpg",
+    profileLink: "https://simpsons.fandom.com/wiki/Moe_Szyslak",
+  },
+  {
+    id: "colin",
+    name: "Colin",
+    slug: "colin",
+    movie: "The Simpsons Movie",
+    year: 2007,
+    role: "Supporting Character",
+    shortDescription: "Lisa's kind classmate who shares her values.",
+    fullDescription:
+      "Colin supports Lisa during the dome crisis and provides hopeful emotional balance in the story. He appears briefly but meaningfully in Lisa's arc.",
+    thumbnail: "./assets/characters/colin.jpg",
+    profileLink: "https://simpsons.fandom.com/wiki/Colin",
+  },
+  {
+    id: "krusty-the-clown",
+    name: "Krusty the Clown",
+    slug: "krusty-the-clown",
+    movie: "The Simpsons Movie",
+    year: 2007,
+    role: "Supporting Character",
+    shortDescription: "Springfield celebrity reacting to the town-wide crisis.",
+    fullDescription:
+      "Krusty appears in public-facing scenes that mirror Springfield's fear and confusion. His presence keeps the movie grounded in familiar media satire.",
+    thumbnail: "./assets/characters/krusty.jpg",
+    profileLink: "https://simpsons.fandom.com/wiki/Krusty_the_Clown",
+  },
+  {
+    id: "chief-wiggum",
+    name: "Chief Wiggum",
+    slug: "chief-wiggum",
+    movie: "The Simpsons Movie",
+    year: 2007,
+    role: "Supporting Character",
+    shortDescription: "Police chief struggling to manage chaos under the dome.",
+    fullDescription:
+      "Wiggum attempts crowd control as Springfield spirals, often with poor results. His comic incompetence adds humor while showing institutional failure.",
+    thumbnail: "./assets/characters/wiggum.jpg",
+    profileLink: "https://simpsons.fandom.com/wiki/Chief_Wiggum",
+  },
+];

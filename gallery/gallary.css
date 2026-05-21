@@ -1,0 +1,93 @@
+body {
+  background-color: #d8f3dc;
+}
+.galleryPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.galleryHeader {
+  margin: 40px 0;
+}
+
+.galleryHero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: clamp(6rem, 9rem, 12rem);
+  border-bottom: 1px solid black;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+}
+
+.galleryHeroCopy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.galleryEyebrow {
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  padding: 3px 7px;
+}
+.galleryEyebrow i {
+  color: #fff;
+}
+.galleryHeroCopy p {
+  max-width: 500px;
+}
+.galleryHeroCopy h1 {
+  margin: 2px 0 20px 0;
+}
+
+.galleryHeroCopy a {
+  border: 1px solid black;
+  background-color: black;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.galleryGrid {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 400px));
+  gap: 20px;
+  padding-bottom: 40px;
+}
+
+.galleryCard {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  height: 250px;
+}
+
+.galleryCard img {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+.galleryCard figcaption {
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  text-align: center;
+}

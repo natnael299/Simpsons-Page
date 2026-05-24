@@ -1,0 +1,190 @@
+body {
+  background-color: #ffd9b3;
+}
+
+#hero {
+  margin-top: 110px;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.heroHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(2rem, 5rem, 6rem);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.description p {
+  max-width: 500px;
+  text-align: center;
+  line-height: 1.4rem;
+}
+
+.description a {
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 10px 12px;
+  text-decoration: none;
+  color: gold;
+  margin-top: 30px;
+  background-color: black;
+  font-weight: bold;
+}
+
+.description a:hover {
+  opacity: 0.7;
+}
+.heroHeader img {
+  width: 590px;
+}
+#characters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  width: 100%;
+  background-color: #0b0b0b;
+  color: gold;
+}
+
+#characters h1 {
+  color: gold;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  margin: 30px 0;
+  height: 55px;
+  width: 550px;
+  border-radius: 25px;
+  padding: 4px;
+  background-color: #fff;
+}
+
+.inputContainer input {
+  padding: 5px 0 5px 10px;
+  border: none;
+  outline: none;
+  height: inherit;
+  width: inherit;
+  background: transparent;
+  border-radius: inherit;
+}
+.inputContainer button {
+  height: 45px;
+  width: 200px;
+  border-radius: inherit;
+  background-color: black;
+  color: gold;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+.inputContainer button:hover {
+  opacity: 0.8;
+}
+
+#charactersC {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 400px));
+  row-gap: 50px;
+  column-gap: 20px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.cxc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cxc img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid gold;
+  padding: 10px;
+}
+
+.cxc .cxcContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+.cxc .checkBtn {
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #222222;
+  color: #fff;
+  text-decoration: none;
+}
+.cxc .checkBtn:hover {
+  opacity: 0.6;
+}
+
+.thumbnailC img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 10px;
+}
+
+dialog:open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  border-radius: 20px;
+  width: fit-content;
+  position: relative;
+  padding: 10px;
+}
+
+dialog::backdrop {
+  background-color: #252525;
+}
+
+dialog:open .dialogContent {
+  display: flex;
+  align-items: start;
+}
+dialog:open img {
+  height: clamp(100px, 150px, 170px);
+  margin-right: clamp(20px, 30px, 40px);
+}
+.dialogContent .info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+}
+.info p {
+  max-width: 450px;
+}
+dialog:open button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  padding: 2px;
+  width: 23px;
+  height: 23px;
+  background-color: red;
+  border: none;
+  color: #fff;
+}

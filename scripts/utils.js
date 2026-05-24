@@ -12,7 +12,7 @@ export const locations = [
       {
         id: 1,
         title: "Front View",
-        image: "./assets/gallery/simpsons-home/gallery-1.jpg",
+        image: "./assets/gallery/simpsons-home/gallery-1.png",
         alt: "Front view of the Simpsons' house",
         fullscreen: true,
       },
@@ -127,7 +127,7 @@ export const locations = [
       {
         id: 2,
         title: "7-Eleven Promotion",
-        image: "./assets/gallery/kwik-e-mart/gallery-2.jpg",
+        image: "./assets/gallery/kwik-e-mart/gallery-2.png",
         alt: "Kwik-E-Mart 7-Eleven promotion photo",
         fullscreen: true,
       },
@@ -175,7 +175,7 @@ export const cxcs = [
       "A flawed but lovable dad whose actions trigger Springfield's crisis.",
     fullDescription:
       "Homer causes the environmental disaster that traps Springfield under a dome after dumping pig waste in the lake. He eventually confronts his mistakes and returns to save his family and town.",
-    thumbnail: "./assets/characters/homer.jpg",
+    thumbnail: "./assets/characters/homer.png",
     profileLink: "https://simpsons.fandom.com/wiki/Homer_Simpson",
   },
   {
@@ -189,7 +189,7 @@ export const cxcs = [
       "The family backbone who pushes Homer to take responsibility.",
     fullDescription:
       "Marge protects the family throughout the chaos and gives Homer clear consequences when he fails them. Her steady judgment keeps the Simpsons together when Springfield turns against them.",
-    thumbnail: "./assets/characters/marge.jpg",
+    thumbnail: "./assets/characters/marge.png",
     profileLink: "https://simpsons.fandom.com/wiki/Marge_Simpson",
   },
   {
@@ -244,7 +244,7 @@ export const cxcs = [
       "Grampa delivers the eerie warning that foreshadows the crisis.",
     fullDescription:
       "During church, Grampa enters a trance-like state and gives a cryptic prophecy. His warning seems absurd at first but ends up framing the movie's central danger.",
-    thumbnail: "./assets/characters/grampa.jpg",
+    thumbnail: "./assets/characters/grampa.png",
     profileLink: "https://simpsons.fandom.com/wiki/Abraham_Simpson",
   },
   {
@@ -257,7 +257,7 @@ export const cxcs = [
     shortDescription: "A kind neighbor who becomes a father figure for Bart.",
     fullDescription:
       "Ned gives Bart the care and stability he feels he is missing from Homer. His patience highlights the emotional conflict inside the Simpson family.",
-    thumbnail: "./assets/characters/ned.jpg",
+    thumbnail: "./assets/characters/ned.png",
     profileLink: "https://simpsons.fandom.com/wiki/Ned_Flanders",
   },
   {
@@ -270,7 +270,7 @@ export const cxcs = [
     shortDescription: "The EPA head who escalates Springfield's destruction.",
     fullDescription:
       "Russ Cargill enforces extreme actions against Springfield and pushes the conflict to its highest stakes. He serves as the movie's central human villain.",
-    thumbnail: "./assets/characters/russ-cargill.jpg",
+    thumbnail: "./assets/characters/russ-cargill.png",
     profileLink: "https://simpsons.fandom.com/wiki/Russ_Cargill",
   },
   {
@@ -284,7 +284,7 @@ export const cxcs = [
       "Springfield's richest man and symbol of unchecked greed.",
     fullDescription:
       "Although not the primary villain in the film, Mr. Burns represents the long-standing corporate selfishness that defines much of Springfield's corruption.",
-    thumbnail: "./assets/characters/mr-burns.jpg",
+    thumbnail: "./assets/characters/mr-burns.png",
     profileLink: "https://simpsons.fandom.com/wiki/Mr._Burns",
   },
   {
@@ -297,7 +297,7 @@ export const cxcs = [
     shortDescription: "Mr. Burns' loyal assistant present in key town moments.",
     fullDescription:
       "Smithers appears alongside Burns and helps maintain continuity with Springfield's power structure. His role is smaller but recognizable in ensemble scenes.",
-    thumbnail: "./assets/characters/smithers.jpg",
+    thumbnail: "./assets/characters/smithers.png",
     profileLink: "https://simpsons.fandom.com/wiki/Waylon_Smithers",
   },
   {
@@ -310,7 +310,7 @@ export const cxcs = [
     shortDescription: "Tavern owner caught up in Springfield's mob panic.",
     fullDescription:
       "Moe contributes to the town's aggressive reaction when Homer is blamed for the catastrophe. His scenes help show Springfield's social breakdown.",
-    thumbnail: "./assets/characters/moe.jpg",
+    thumbnail: "./assets/characters/moe.png",
     profileLink: "https://simpsons.fandom.com/wiki/Moe_Szyslak",
   },
   {
@@ -323,7 +323,7 @@ export const cxcs = [
     shortDescription: "Lisa's kind classmate who shares her values.",
     fullDescription:
       "Colin supports Lisa during the dome crisis and provides hopeful emotional balance in the story. He appears briefly but meaningfully in Lisa's arc.",
-    thumbnail: "./assets/characters/colin.jpg",
+    thumbnail: "./assets/characters/colin.png",
     profileLink: "https://simpsons.fandom.com/wiki/Colin",
   },
   {
@@ -336,7 +336,7 @@ export const cxcs = [
     shortDescription: "Springfield celebrity reacting to the town-wide crisis.",
     fullDescription:
       "Krusty appears in public-facing scenes that mirror Springfield's fear and confusion. His presence keeps the movie grounded in familiar media satire.",
-    thumbnail: "./assets/characters/krusty.jpg",
+    thumbnail: "./assets/characters/krusty.png",
     profileLink: "https://simpsons.fandom.com/wiki/Krusty_the_Clown",
   },
   {
@@ -349,7 +349,7 @@ export const cxcs = [
     shortDescription: "Police chief struggling to manage chaos under the dome.",
     fullDescription:
       "Wiggum attempts crowd control as Springfield spirals, often with poor results. His comic incompetence adds humor while showing institutional failure.",
-    thumbnail: "./assets/characters/wiggum.jpg",
+    thumbnail: "./assets/characters/wiggum.png",
     profileLink: "https://simpsons.fandom.com/wiki/Chief_Wiggum",
   },
 ];

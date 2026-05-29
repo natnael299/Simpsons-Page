@@ -17,7 +17,6 @@ function filterCxc() {
   const filteredL = cxcs.filter((l) =>
     l.name.toLowerCase().includes(searchTerm),
   );
-
   homesContainer.innerHTML = setUpHTML(filteredL);
 }
 filterCxc();
@@ -42,28 +41,6 @@ const exploreBtn = document.querySelectorAll(".checkBtn");
 exploreBtn.forEach((btn) => {
   btn.addEventListener("click", () => {
     const id = btn.dataset.cxcId;
-    dispalyInfo(id);
+    window.location.href = `./cxcDetail.html?id=${id}`;
   });
 });
-
-function dispalyInfo(id) {
-  const cxc = cxcs.find((c) => c.id === id);
-  dialogEle.innerHTML = `
-  <button class='closeBtn' onclick='closeDialog()'><i class='fas fa-x'></i></button>
-  <div class='dialogContent'>
-   <img src=${cxc.thumbnail} alt=${cxc.name}>
-   <div class='info'>
-     <h2>${cxc.name}</h2>
-     <p><strong>role:</strong>   ${cxc.role}</p>
-     <p>${cxc.fullDescription}</p>
-   </div>
-  </div>
-  `;
-
-  dialogEle.showModal();
-}
-
-//close the dialog
-window.closeDialog = function closeDialog() {
-  dialogEle.close();
-};

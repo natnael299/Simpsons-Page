@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/general.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .hide {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./assets/logo.svg" alt="the simpson logo" />
+      <!--- Desktop Menu -->
+      <nav class="navBarDesktop"></nav>
+
+      <!-- Opens Mobile Menu-->
+      <button class="mobileMenuOpener" popovertarget="mobileMenu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!--- Mobile Menu -->
+      <div popover="" id="mobileMenu">
+        <!-- Closes Mobile Menu-->
+        <button
+          popovertarget="mobileMenu"
+          popovertargetaction="hide"
+          class="closeButton"
+        >
+          <i class="fa-solid fa-x"></i>
+        </button>
+      </div>
+    </header>
+
+    <div class="container">
+      <div style="margin-top: 100px">
+        <button class="infoBtn">Info</button>
+        <button class="memesBtn">Memes</button>
+      </div>
+
+      <div class="info">
+        <h1>info</h1>
+      </div>
+
+      <div class="memes hide">
+        <h1>memes</h1>
+      </div>
+    </div>
+    <script src="./scripts/general.js"></script>
+    <script type="module" src="./cxcDetail.js"></script>
+    <script></script>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-import { locations } from "../scripts/utils.js";
+import { locations, cxcs } from "../scripts/utils.js";
 
 const urlParam = new URLSearchParams(document.location.search);
 const id = urlParam.get("id");

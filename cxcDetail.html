@@ -13,47 +13,108 @@
       referrerpolicy="no-referrer"
     />
     <style>
-      .hide {
+      body {
+        background-color: #dff7e2;
+      }
+
+      .cxcContainer {
+        display: flex;
+        align-items: center;
+        margin-top: 150px;
+      }
+
+      .imgContainer img {
+        height: clamp(220px, 250px, 280px);
+      }
+
+      .cxcDetailCOntainer {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .info.hide,
+      .memes.hide {
         display: none;
+      }
+
+      .infoBtn.current,
+      .memesBtn.current {
+        background-color: black;
+        color: #fff;
+      }
+
+      .buttonsC {
+        width: 100%;
+        display: flex;
+      }
+
+      .buttonsC button {
+        width: 170px;
+        padding: 6px 0;
+      }
+
+      .cxcFeatures {
+        border: 2px solid black;
+        padding: 0 20px 20px 20px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      .cxcFeatures p {
+        max-width: 600px;
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 15px;
+        margin-top: 40px;
       }
     </style>
   </head>
   <body>
-    <header>
-      <img class="logo" src="./assets/logo.svg" alt="the simpson logo" />
-      <!--- Desktop Menu -->
-      <nav class="navBarDesktop"></nav>
-
-      <!-- Opens Mobile Menu-->
-      <button class="mobileMenuOpener" popovertarget="mobileMenu">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-
-      <!--- Mobile Menu -->
-      <div popover="" id="mobileMenu">
-        <!-- Closes Mobile Menu-->
-        <button
-          popovertarget="mobileMenu"
-          popovertargetaction="hide"
-          class="closeButton"
-        >
-          <i class="fa-solid fa-x"></i>
-        </button>
-      </div>
-    </header>
-
     <div class="container">
-      <div style="margin-top: 100px">
-        <button class="infoBtn">Info</button>
-        <button class="memesBtn">Memes</button>
-      </div>
+      <header>
+        <img class="logo" src="./assets/logo.svg" alt="the simpson logo" />
+        <!--- Desktop Menu -->
+        <nav class="navBarDesktop"></nav>
 
-      <div class="info">
-        <h1>info</h1>
-      </div>
+        <!-- Opens Mobile Menu-->
+        <button class="mobileMenuOpener" popovertarget="mobileMenu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
 
-      <div class="memes hide">
-        <h1>memes</h1>
+        <!--- Mobile Menu -->
+        <div popover="" id="mobileMenu">
+          <!-- Closes Mobile Menu-->
+          <button
+            popovertarget="mobileMenu"
+            popovertargetaction="hide"
+            class="closeButton"
+          >
+            <i class="fa-solid fa-x"></i>
+          </button>
+        </div>
+      </header>
+      <div class="cxcContainer">
+        <div class="imgContainer"></div>
+        <div class="cxcDetailCOntainer">
+          <div class="buttonsC">
+            <button class="infoBtn current">Info</button>
+            <button class="memesBtn">Memes</button>
+          </div>
+          <div class="cxcFeatures">
+            <div class="info">
+              <h1>info</h1>
+            </div>
+
+            <div class="memes hide">
+              <h1>memes</h1>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="./scripts/general.js"></script>

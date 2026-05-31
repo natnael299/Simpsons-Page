@@ -483,3 +483,65 @@ export const cxcs = [
     profileLink: "https://simpsons.fandom.com/wiki/Seymour_Skinner",
   },
 ];
+
+export const stats = {
+  Title: "The Simpsons",
+  Year: "1989–Present",
+  Genre: "Animated Sitcom / Satire",
+  Description:
+    "A satirical look at American life through the eyes of the dysfunctional Simpson family, set in the fictional town of Springfield.",
+  Creator: "Matt Groening",
+  MainCast: [
+    "Dan Castellaneta",
+    "Julie Kavner",
+    "Nancy Cartwright",
+    "Yeardley Smith",
+    "Hank Azaria",
+  ],
+  Runtime: "~22 min per episode",
+  ImdbRating: 8.7,
+  Network: "Fox Broadcasting Company",
+};
+
+export const reviews = [
+  {
+    critic: "Rob Sheffield",
+    media: "Rolling Stone",
+    review:
+      "How has America's favorite cartoon family lasted this long? Because they're also America's realest family.",
+    rating: "#5 Greatest TV Shows of All Time",
+    sourceLink:
+      "https://www.rollingstone.com/tv-movies/tv-movie-lists/100-greatest-tv-shows-of-all-time-105998/er-110349",
+  },
+  {
+    critic: "Ken Tucker",
+    media: "Entertainment Weekly",
+    review:
+      "It's becoming obvious that The Simpsons, now in its second season, isn't just a product of media hype: Matt Groening's cartoon family is one of the few current works of popular art that possess wit and integrity.",
+    rating: "A+",
+    sourceLink: "http://www.ew.com/ew/article/0,,318535,00.html",
+  },
+  {
+    critic: "Ken Tucker",
+    media: "Entertainment Weekly",
+    review:
+      "The Simpsons has never been better. At a time when half-hour TV comedy is reaching a new level of self-referential daring, The Simpsons continues to emphasize that there's a big world out there that television barely touches upon.",
+    rating: "100/100 (Metacritic archive)",
+    sourceLink: "http://www.ew.com/ew/article/0,,305875,00.html",
+  },
+  {
+    critic: "Ken Tucker",
+    media: "Entertainment Weekly",
+    review:
+      "This is one of the sharpest, most purely pleasurable television series ever. What began in 1987 has become one of the medium's most dependable entertainments, a cartoon that transcended cartoonishness a long time ago.",
+    rating: "100/100 (Metacritic archive)",
+    sourceLink: "http://www.ew.com/ew/article/0,,287363,00.html",
+  },
+  {
+    critic: "Ed Siegel",
+    media: "Boston Globe",
+    review: "More than a cartoon, it's TV's most intelligent comedy.",
+    rating: "90/100 (Metacritic archive)",
+    sourceLink: "https://www.metacritic.com/tv/the-simpsons/critic-reviews/",
+  },
+];

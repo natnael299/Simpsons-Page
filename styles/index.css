@@ -121,8 +121,10 @@ body {
   background-color: #fff;
   border-radius: 15px;
   padding: 15px;
-  max-width: 500px;
+  width: 500px;
   position: relative;
+  text-decoration: none;
+  color: #252525;
 }
 
 .comment .review {
@@ -185,13 +187,23 @@ body {
   gap: 2px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1500px) and (min-width: 901px) {
+  #hero {
+    margin-bottom: 70px;
+  }
+  .MovieOverview {
+    margin-right: clamp(1rem, 2rem, 4rem);
+  }
+}
+
+@media (max-width: 900px) {
   #hero {
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
     margin-top: clamp(60px, 10vh, 150px);
+    margin-bottom: 80px;
   }
 
   #hero .detailsContainer {
@@ -238,6 +250,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: clamp(30px, 40px, 50px);
     margin-top: 3rem;
   }
 
@@ -266,5 +279,8 @@ body {
 @media (max-width: 540px) {
   #statesSection {
     margin-top: 1.5rem;
+  }
+  .comments {
+    max-width: 200px;
   }
 }

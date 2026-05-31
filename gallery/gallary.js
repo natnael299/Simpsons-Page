@@ -1,4 +1,4 @@
-import { locations, cxcs } from "../scripts/utils.js";
+import { locations } from "../scripts/utils.js";
 
 const urlParam = new URLSearchParams(document.location.search);
 const id = urlParam.get("id");
@@ -16,7 +16,7 @@ const galleryMarkup = `
 				<img src="${selectedLocation.coverImage}" alt="${selectedLocation.name}" />
 			</div>
 			<div class="galleryHeroCopy">
-				<p class="galleryEyebrow"><i class='fas fa-location-dot'></i> ${selectedLocation.shortDescription}</p>
+				<p class="galleryEyebrow"><i class='fas fa-location-dot'></i> ${selectedLocation.tag}</p>
 				<h1>${selectedLocation.name}</h1>
 				<p>${selectedLocation.fullDescription}</p>
 				<a href='./springfield.html'>&leftarrow;  Back to Springfield</a>
@@ -40,3 +40,29 @@ const galleryMarkup = `
 `;
 
 container.insertAdjacentHTML("beforeend", galleryMarkup);
+
+const galleryGrid = document.querySelector(".galleryGrid");
+const fullscreenDialog = document.createElement("dialog");
+fullscreenDialog.className = "fullscreenDialog";
+fullscreenDialog.innerHTML = `
+	<div class="dialogInner">
+		<button class="closeFullscreen" type="button" aria-label="Close image viewer">x</button>
+		<img src="" alt="Fullscreen gallery image" />
+	</div>
+`;
+
+container.appendChild(fullscreenDialog);
+
+const fullscreenImage = fullscreenDialog.querySelector("img");
+const closeFullscreen = fullscreenDialog.querySelector(".closeFullscreen");
+
+closeFullscreen.addEventListener("click", () => fullscreenDialog.close());
+
+galleryGrid.addEventListener("click", (event) => {
+	const image = event.target.closest("img[data-fullscreen='true']");
+	if (!image) return;
+
+	fullscreenImage.src = image.src;
+	fullscreenImage.alt = image.alt;
+	fullscreenDialog.showModal();
+});

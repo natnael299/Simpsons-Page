@@ -20,16 +20,35 @@
       .cxcContainer {
         display: flex;
         align-items: center;
+        justify-content: center;
+        gap: 24px;
         margin-top: 150px;
+        padding: 0 16px 32px;
+        width: 100%;
+      }
+
+      .imgContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        top: 110px;
+        border: 1px solid black;
+        background-color: black;
+        border-radius: 10px;
+        padding: 22px;
+        min-width: 280px;
       }
 
       .imgContainer img {
-        height: clamp(220px, 250px, 280px);
+        width: clamp(180px, 22vw, 300px);
+        height: auto;
       }
 
       .cxcDetailCOntainer {
         display: flex;
         flex-direction: column;
+        width: min(92vw, 760px);
       }
 
       .info.hide,
@@ -49,8 +68,10 @@
       }
 
       .buttonsC button {
-        width: 170px;
-        padding: 6px 0;
+        width: 180px;
+        padding: 10px 0;
+        border: 1px solid black;
+        cursor: pointer;
       }
 
       .cxcFeatures {
@@ -62,7 +83,8 @@
       }
 
       .cxcFeatures p {
-        max-width: 600px;
+        max-width: 700px;
+        line-height: 1.5;
       }
 
       .info {
@@ -71,6 +93,115 @@
         align-items: start;
         gap: 15px;
         margin-top: 40px;
+      }
+
+      .audioConatiner {
+        display: flex;
+        gap: 20px;
+      }
+
+      .audioConatiner audio {
+        width: 250px;
+      }
+
+      .memes {
+        display: flex;
+        max-width: 100%;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 24px;
+      }
+
+      .memeContainer {
+        cursor: pointer;
+      }
+
+      .memes img {
+        height: 220px;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      dialog:open {
+        position: relative;
+        height: min(88vh, 640px);
+        width: min(90vw, 700px);
+        border: 1px solid black;
+        display: flex;
+        margin: auto;
+        overflow: hidden;
+      }
+
+      dialog::backdrop {
+        background: #252525;
+      }
+      dialog button {
+        background-color: black;
+        color: red;
+        border: none;
+        z-index: 2;
+        position: absolute;
+        top: 2px;
+        right: 2px;
+      }
+
+      dialog img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      @media (max-width: 1000px) {
+        .cxcContainer {
+          flex-direction: column;
+          margin-top: 100px;
+          gap: 16px;
+        }
+
+        .imgContainer {
+          position: static;
+          width: min(92vw, 520px);
+          min-width: 0;
+          padding: 14px;
+        }
+
+        .imgContainer img {
+          width: min(100%, 320px);
+        }
+
+        .cxcDetailCOntainer {
+          width: min(92vw, 700px);
+        }
+      }
+
+      @media (max-width: 700px) {
+        .buttonsC {
+          width: 100%;
+        }
+
+        .buttonsC button {
+          width: 50%;
+          font-size: 0.95rem;
+        }
+
+        .cxcFeatures {
+          padding: 0 14px 18px;
+        }
+
+        .info {
+          margin-top: 24px;
+          gap: 12px;
+        }
+
+        .memes {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
+        .memes img {
+          width: 100%;
+          height: auto;
+        }
       }
     </style>
   </head>
@@ -106,17 +237,16 @@
             <button class="memesBtn">Memes</button>
           </div>
           <div class="cxcFeatures">
-            <div class="info">
-              <h1>info</h1>
-            </div>
+            <div class="info"></div>
 
-            <div class="memes hide">
-              <h1>memes</h1>
-            </div>
+            <div class="memes hide"></div>
           </div>
         </div>
       </div>
     </div>
+    <dialog id="memeDialog">
+      <button class="closeMemeDialog"><i class="fas fa-x"></i></button>
+    </dialog>
     <script src="./scripts/general.js"></script>
     <script type="module" src="./cxcDetail.js"></script>
     <script></script>

@@ -5,7 +5,13 @@ const inputEle = document.querySelector(".inputEle");
 const inputBtn = document.querySelector(".inputBtn");
 inputBtn.addEventListener("click", filterCxc);
 inputEle.addEventListener("input", filterCxc);
-const dialogEle = document.querySelector(".dialog");
+
+homesContainer.addEventListener("click", (event) => {
+  const button = event.target.closest(".checkBtn");
+  if (!button) return;
+  const id = button.dataset.cxcId;
+  window.location.href = `./cxcDetail.html?id=${id}`;
+});
 
 //filter a characther or return all
 function filterCxc() {
@@ -17,7 +23,9 @@ function filterCxc() {
   const filteredL = cxcs.filter((l) =>
     l.name.toLowerCase().includes(searchTerm),
   );
-  homesContainer.innerHTML = setUpHTML(filteredL);
+  homesContainer.innerHTML = filteredL.length
+    ? setUpHTML(filteredL)
+    : `<div class="emptyState"><h3>No characters found</h3><p>Try a different character name.</p></div>`;
 }
 filterCxc();
 
@@ -35,12 +43,3 @@ function setUpHTML(array) {
   });
   return html;
 }
-
-//open the dialog and show the content of the selected cxc.
-const exploreBtn = document.querySelectorAll(".checkBtn");
-exploreBtn.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    const id = btn.dataset.cxcId;
-    window.location.href = `./cxcDetail.html?id=${id}`;
-  });
-});

@@ -545,3 +545,62 @@ export const reviews = [
     sourceLink: "https://www.metacritic.com/tv/the-simpsons/critic-reviews/",
   },
 ];
+
+export const comments = [
+  {
+    name: "Liam Carter",
+    date: "31.5.2026",
+    title: "That opening scene still hits",
+    message:
+      "I rewatched the movie last night and the opening sequence still sets the tone perfectly. It feels goofy and chaotic, but there is a lot of smart setup for the rest of the story.",
+  },
+  {
+    name: "Sofia Niemi",
+    date: "31.5.2026",
+    title: "Homer was painfully accurate",
+    message:
+      "Homer causing half the problems and then trying to fix them is exactly why the movie works. He is ridiculous, but the character arc still feels real by the end.",
+  },
+  {
+    name: "Ethan Brooks",
+    date: "30.5.2026",
+    title: "Best visual gag in the dome",
+    message:
+      "The scenes inside the dome are packed with quick background jokes. Every time I pause, there is some tiny Springfield detail I missed before.",
+  },
+  {
+    name: "Maya Salonen",
+    date: "30.5.2026",
+    title: "Lisa and Colin subplot",
+    message:
+      "I liked that Lisa and Colin had a softer, quieter dynamic compared to the rest of the chaos. It gave the movie a bit of balance.",
+  },
+  {
+    name: "Noah Reed",
+    date: "29.5.2026",
+    title: "Voice cast appreciation",
+    message:
+      "Dan Castellaneta and Julie Kavner carry so many emotional beats in the movie. Even small line deliveries make scenes way funnier.",
+  },
+  {
+    name: "Ava Lehtinen",
+    date: "29.5.2026",
+    title: "Moe and the side characters",
+    message:
+      "One thing I love is that even with limited screen time, side characters like Moe and Flanders still feel memorable and very on brand.",
+  },
+  {
+    name: "Oliver Grant",
+    date: "28.5.2026",
+    title: "Favorite line delivery",
+    message:
+      "Hank Azaria has incredible timing in this movie. The way he switches energy between characters is one of the biggest reasons scenes keep moving.",
+  },
+  {
+    name: "Ella Virtanen",
+    date: "28.5.2026",
+    title: "Movie vs series tone",
+    message:
+      "The movie feels bigger than a normal episode, but it still keeps the same Simpsons identity. That is hard to do and they nailed it.",
+  },
+];

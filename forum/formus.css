@@ -1,0 +1,89 @@
+#hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 110px 20px 30px;
+}
+
+.forumSection {
+  width: min(900px, 100%);
+  border: 3px solid #111;
+  padding: 18px;
+  background: #f6f6f6;
+}
+
+.forumHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.forumHeader button {
+  border: 2px solid #111;
+  background: #fff;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.commentsList {
+  display: flex;
+  flex-direction: column;
+}
+
+.commentItem {
+  border-bottom: 3px solid #111;
+  padding: 16px 0;
+}
+
+.commentItem:last-child {
+  border-bottom: 0;
+}
+
+.commentItem h3 {
+  margin: 6px 0;
+  font-size: 1.1rem;
+}
+
+.commentMeta {
+  font-weight: 600;
+}
+
+.newCommentDialog:open {
+  padding: 0;
+  border: 2px solid #111;
+  display: flex;
+  margin: auto;
+}
+
+.newCommentDialog::backdrop {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.newCommentForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  min-width: min(540px, 92vw);
+}
+
+.newCommentForm label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-weight: 700;
+}
+
+.newCommentForm input,
+.newCommentForm textarea {
+  border: 1px solid #111;
+  padding: 8px;
+  font: inherit;
+}
+
+.dialogButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
